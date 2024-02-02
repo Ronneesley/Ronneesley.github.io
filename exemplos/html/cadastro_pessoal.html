@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora de Idade</title>
+		
+		<style type="text/css">
+			input {
+				border: 1px solid #000;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			
+			input:hover {
+				background-color: #ffcccc;
+			}
+			
+			label {
+				color: gray;
+				font-weight: bold;
+				font-size: 12px;
+			}
+			
+			#calcular {
+				background-color: white;
+				float: right;
+			}
+			
+			#calcular:hover {
+				background-color: lightgrey;
+			}
+			
+			.formulario {
+				overflow: hidden;
+				background-color: #f4f4f4;
+				border: 1px dashed #000;
+				padding: 10px;
+				width: 215px;
+				margin: 0 auto;
+				margin-bottom: 20px;				
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form method="POST" action="calcular_idade.php">
+			<div class="formulario">
+				<label>Nome</label><br />
+				<input type="text" name="nome" />
+				<br />
+				
+				<label>Ano do Nascimento</label>
+				<br />
+				<input type="number" name="ano" />
+				<br /><br />
+				
+				<input type="submit" 
+					value="Calcular Idade" 
+					id="calcular" />			
+			</div>
+			
+			<div class="formulario">
+				O sistema calcular&aacute; sua idade
+			</div>
+		</form>
+	</body>
+</html>

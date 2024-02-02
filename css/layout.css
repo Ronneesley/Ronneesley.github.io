@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+#layout {
+
+	padding: 5px;
+	overflow: hidden;
+}
+
+#topo {
+	font-size: 30px;
+	background-color: #f4f4f4;
+	padding: 10px;
+	border: 1px solid #e2e2e2;
+}
+
+#menu {
+	border: 1px solid #e2e2e2;
+	padding: 20px;
+	min-height: 400px;
+	width: 200px;
+	float: left;
+}
+
+#conteudo {
+	border: 1px solid #e2e2e2;
+	padding: 20px;
+	min-height: 400px;
+}
+
+#rodape {
+	background-color: #f4f4f4;
+	color: grey;
+	padding: 20px;
+	text-align: right;
+	border: 1px solid #e2e2e2;
+}
