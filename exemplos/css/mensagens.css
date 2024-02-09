@@ -1,0 +1,19 @@
+.msg {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.sucesso {
+    border: 1px solid #00ff00;                
+    background-color: #ddffdd;                
+}
+
+.erro {
+    border: 1px solid #ff0000; 
+    background-color: #ffdddd; 
+}
+
+.alerta {
+    border: 1px solid #ff6622; 
+    background-color: #ffcc88; 
+}

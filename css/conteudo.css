@@ -1,0 +1,14 @@
+h2 {
+    border-bottom: 1px dashed #333;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+    color: #333;
+    font-size: 20px;
+}
+
+p.ident {
+    text-indent: 30px;
+}

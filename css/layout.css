@@ -3,11 +3,11 @@ body {
 	padding: 0;
 }
 
-
 #layout {
-
+	width: 1080px;
 	padding: 5px;
 	overflow: hidden;
+	margin: 0 auto;
 }
 
 #topo {
@@ -28,7 +28,7 @@ body {
 
 #conteudo {
 	border: 1px solid #e2e2e2;
-	padding: 20px;
+	padding: 0px;
 	min-height: 400px;
 }
 

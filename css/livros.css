@@ -1,0 +1,16 @@
+div.livros a {
+    margin-right: 10px;
+}
+
+div.livros img {
+    width: 200px;
+    height: 300px;
+    filter: grayscale(1);
+    transition: all 0.5s ease;
+    border: 3px solid black;
+}
+
+div.livros img:hover {
+    filter: grayscale(0);
+    border: 3px solid blue;
+}
