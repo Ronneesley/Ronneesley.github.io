@@ -19,10 +19,11 @@ body {
 
 #menu {
 	border: 1px solid #e2e2e2;
-	padding: 20px;
+	padding: 0px;
 	min-height: 400px;
 	width: 200px;
 	float: left;
+	background-color: #f4f4f4;
 }
 
 #conteudo {

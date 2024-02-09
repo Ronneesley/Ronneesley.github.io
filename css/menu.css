@@ -1,0 +1,35 @@
+ul.menu, ul.submenu {
+    list-style: none;
+}
+
+ul.menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.submenu {
+    margin: 0px;
+    padding-left: 0px;
+    border-left: 10px solid #888;
+}
+
+ul.menu li {
+    padding: 10px;
+    border: 1px solid #999;
+    margin-bottom: 2px;
+    background-color: #e2e2e2;
+}
+
+ul.submenu li {
+    border: 1px solid #999;
+    background-color: #ccc;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #222;
+}
+
+ul.menu li:hover {
+    background-color: #f4f4f4;
+}
