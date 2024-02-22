@@ -7,6 +7,11 @@ ul.menu {
     padding: 0px;
 }
 
+ul.menu li.submenu {
+    margin: 0px;
+    padding: 0px;
+}
+
 ul.submenu {
     margin: 0px;
     padding-left: 0px;
