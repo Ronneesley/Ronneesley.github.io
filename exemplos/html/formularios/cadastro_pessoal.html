@@ -4,16 +4,6 @@
 		<title>Calculadora de Idade</title>
 		
 		<style type="text/css">
-			input {
-				border: 1px solid #000;
-				padding: 10px;
-				border-radius: 10px;
-			}
-			
-			input:hover {
-				background-color: #ffcccc;
-			}
-			
 			label {
 				color: gray;
 				font-weight: bold;
@@ -22,7 +12,9 @@
 			
 			#calcular {
 				background-color: white;
+				width: 150px;
 				float: right;
+				cursor: pointer;
 			}
 			
 			#calcular:hover {
@@ -34,14 +26,27 @@
 				background-color: #f4f4f4;
 				border: 1px dashed #000;
 				padding: 10px;
-				width: 215px;
+				width: 220px;
 				margin: 0 auto;
 				margin-bottom: 20px;				
+			}
+
+			input {
+				border: 1px solid #000;
+				padding: 10px;
+				border-radius: 10px;
+				width: 200px;
+			}
+			
+			input:hover {
+				background-color: #ffcccc;
 			}
 		</style>
 	</head>
 	
 	<body>
+		<h2>Cadastro de Pessoas</h2>
+
 		<form method="POST" action="calcular_idade.php">
 			<div class="formulario">
 				<label>Nome</label><br />

@@ -1,33 +1,25 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Calculadora</title>
+<script>
+	function somar(){
+		var n1 = document.getElementById("numero1").value;
+		var n2 = document.getElementById("numero2").value;
 
-		<script>
-			function somar(){
-				var n1 = document.getElementById("numero1").value;
-				var n2 = document.getElementById("numero2").value;
+		var r = parseInt(n1) + parseInt(n2);
 
-				var r = parseInt(n1) + parseInt(n2);
-	
-				document.getElementById("resultado").innerHTML = r;
-			}
-		</script>
-	</head>
-	<body>
-		<h1>Calculadora</h1>
+		document.getElementById("resultado").innerHTML = r;
+	}
+</script>
 
-		<label for="numero1">Número 1</label><br />
-		<input type="number" id="numero1" />
-		<br />
+<h2>Calculadora</h2>
 
-		<label for="numero2">Número 2</label><br />
-		<input type="number" id="numero2" />
-		<br /><br />
+<label for="numero1">Número 1</label><br />
+<input type="number" id="numero1" />
+<br />
 
-		<input type="button" value="Somar"
-			onclick="somar();" />
-		
-		<div id="resultado"></div>
-	</body>
-</html>
+<label for="numero2">Número 2</label><br />
+<input type="number" id="numero2" />
+<br /><br />
+
+<input type="button" value="Somar"
+	onclick="somar();" />
+
+<div id="resultado"></div>

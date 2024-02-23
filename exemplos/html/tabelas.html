@@ -1,43 +1,31 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Meu currículo</title>
+<h2>Tabelas no HTML</h2>
 
-		<meta charset="utf-8">
-		<meta name="keywords" 
-content="Currículo,cursos,Ronneesley">		
-	</head>
-	<body>
-		<h1>Tabelas no HTML</h1>
+Listagem de Cursos:
 
-		Listagem de Cursos:
+<table border="1">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Ano</th>
+		</tr>
+	</thead>
 
-		<table border="1">
-			<thead>
-				<tr>
-					<th>Nome</th>
-					<th>Ano</th>
-				</tr>
-			</thead>
+	<tbody>
+		<tr>
+			<td>Análise de Sistemas</td>
+			<td>2005-2008</td>
+		</tr>
 
-			<tbody>
-				<tr>
-					<td>Análise de Sistemas</td>
-					<td>2005-2008</td>
-				</tr>
+		<tr>
+			<td>Ciência da Computação - IA</td>
+			<td>2009-2011</td>
+		</tr>
+	</tbody>
 
-				<tr>
-					<td>Ciência da Computação - IA</td>
-					<td>2009-2011</td>
-				</tr>
-			</tbody>
-
-			<tfoot>
-				<tr>
-					<td colspan="2"
+	<tfoot>
+		<tr>
+			<td colspan="2"
 style="text-align: right;">2 Cursos</td>
-				</tr>
-			</tfoot>
-		</table>
-	</body>
-</html>
+		</tr>
+	</tfoot>
+</table>

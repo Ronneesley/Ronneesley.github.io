@@ -21,6 +21,12 @@ body {
 
 code {
     font-size: 18px;
+    background-color: bisque;
+    opacity: 0.8;
+    border: 1px dashed lightgray;
+    border-radius: 10px;    
+    padding-right: 5px;
+    padding-left: 5px;    
 }
 
 li {
@@ -35,4 +41,29 @@ a {
 a:hover {
     border-bottom: 1px dashed blue;
     background-color: #f5f5ff;
+}
+
+div.paineis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+div.painel {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px #f4f4f4;
+}
+
+div.painel h3 {    
+    margin: 0;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
 }
