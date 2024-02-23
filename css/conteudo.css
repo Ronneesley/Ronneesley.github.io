@@ -1,5 +1,7 @@
 h2 {
     border-bottom: 1px dashed #333;
+    padding-left: 10px;
+    border-left: 5px solid #333;
 }
 
 p {
@@ -11,4 +13,26 @@ p {
 
 p.ident {
     text-indent: 30px;
+}
+
+body {    
+    font-size: 18px;
+}
+
+code {
+    font-size: 18px;
+}
+
+li {
+    line-height: 1.5;
+}
+
+a { 
+    text-decoration: none;
+    border-bottom: 1px dashed lightblue;
+}
+
+a:hover {
+    border-bottom: 1px dashed blue;
+    background-color: #f5f5ff;
 }
