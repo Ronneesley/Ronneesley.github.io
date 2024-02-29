@@ -13,7 +13,7 @@
         if (nome.trim() == ""){
             mostrarMensagem("Preencha o campo nome");
             return false;
-        } else if (nome.length < 6){
+        } else if (nome.trim().length < 6){
             mostrarMensagem("O campo nome deve possuir no mínimo 6 caracteres");
             return false;
         }
@@ -21,8 +21,8 @@
         if (telefone.trim() == ""){
             mostrarMensagem("Preencha o campo telefone");
             return false;
-        } else if (telefone.length != 16){
-            mostrarMensagem("O telefone deve ter exatamente 15 números, no formato (NN) N NNNN-NNNN");
+        } else if (telefone.trim().length != 16){
+            mostrarMensagem("O telefone deve ter exatamente 16 caracteres, no formato (NN) N NNNN-NNNN");
             return false;
         } else {
             var valido = true;
@@ -31,6 +31,7 @@
                 if (!(digito >= '0' && digito <= '9' || 
                     digito == ' ' || digito == '(' || digito == ')' || digito == '-')){
                     valido = false;
+                    break;
                 }
             }
 
