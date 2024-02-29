@@ -1,0 +1,15 @@
+<h2>Canvas: Retângulo</h2>
+
+<canvas id="desenho" width="500" height="300" 
+    style="border: 2px dashed black;"></canvas>
+
+<script>
+    var c = document.getElementById("desenho");
+    var ctx = c.getContext("2d");
+
+    ctx.fillStyle = "green";    
+    ctx.fillRect(100, 70, 300, 150);
+
+    ctx.strokeStyle = "red";
+    ctx.strokeRect(100, 70, 300, 150);
+</script>

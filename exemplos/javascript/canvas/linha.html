@@ -1,0 +1,24 @@
+<h2>Canvas: Linha</h2>
+
+<canvas id="desenho" width="500" height="300" 
+    style="border: 2px dashed black;"></canvas>
+
+<script>
+    var c = document.getElementById("desenho");
+    var ctx = c.getContext("2d");
+
+    ctx.strokeStyle = "blue";
+    
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(300, 50);
+    ctx.lineTo(400, 150);
+    ctx.lineTo(500, 0);
+    ctx.stroke();
+</script>
+
+<h2>Referências</h2>
+
+<ul>
+    <li><a href="https://www.w3.org/2015/04/2dcontext-lc-sample.html" target="_blank">Definições da W3C sobre Canvas</a></li>
+</ul>

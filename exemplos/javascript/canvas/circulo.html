@@ -1,0 +1,21 @@
+<h2>Canvas: Arco ou Círculo</h2>
+
+<canvas id="desenho" width="500" height="300" 
+    style="border: 2px dashed black;"></canvas>
+
+<script>
+    var c = document.getElementById("desenho");
+    var ctx = c.getContext("2d");
+
+    ctx.strokeStyle = "blue";
+    
+    ctx.beginPath();
+    ctx.arc(300, 150, 50, 0, 2 * Math.PI)
+    ctx.stroke();
+
+    ctx.strokeStyle = "red";
+    
+    ctx.beginPath();
+    ctx.arc(100, 150, 25, 0, 3 * Math.PI / 2)
+    ctx.stroke();
+</script>

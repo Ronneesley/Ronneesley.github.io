@@ -1,0 +1,16 @@
+<h2>Canvas: Gradientes</h2>
+
+<canvas id="desenho" width="500" height="300" 
+    style="border: 2px dashed black;"></canvas>
+
+<script>
+    var c = document.getElementById("desenho");
+    var ctx = c.getContext("2d");
+
+    var grd = ctx.createLinearGradient(100, 70, 200, 150);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "green");
+
+    ctx.fillStyle = grd;
+    ctx.fillRect(100, 70, 300, 150);
+</script>

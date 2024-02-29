@@ -1,0 +1,22 @@
+<h2>Canvas: Textos</h2>
+
+<canvas id="desenho" width="500" height="300" 
+    style="border: 2px dashed black;"></canvas>
+
+<script>
+    var c = document.getElementById("desenho");
+    var ctx = c.getContext("2d");
+        
+    ctx.font = "40px Arial";
+    ctx.fillText("Prof. Roni", 250, 150);
+    
+    ctx.strokeStyle = "blue";
+    ctx.font = "30px Arial";        
+    ctx.strokeText("Programação", 250, 200);
+
+    ctx.strokeStyle = "red";
+    ctx.fillStyle = "yellow";
+    ctx.font = "35px Arial";
+    ctx.fillText("Algoritmos", 250, 250);
+    ctx.strokeText("Algoritmos", 250, 250);
+</script>
