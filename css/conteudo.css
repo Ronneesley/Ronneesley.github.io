@@ -67,3 +67,9 @@ div.painel h3 {
     border-radius: 10px;
     padding: 10px;
 }
+
+blockquote {
+    margin-left: 0px;
+    padding-left: 1em;
+    border-left: 4px solid #e2e2e2;
+}
