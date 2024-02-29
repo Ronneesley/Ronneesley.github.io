@@ -1,0 +1,68 @@
+<h2>Validação de Formulários</h2>
+
+<script>
+    function mostrarMensagem(m){
+        document.getElementById("mensagem").innerHTML = m;
+    }
+
+    function validar(){
+        var nome = document.getElementById("nome").value;
+        var telefone = document.getElementById("telefone").value;
+        var email = document.getElementById("email").value;
+
+        if (nome.trim() == ""){
+            mostrarMensagem("Preencha o campo nome");
+            return false;
+        } else if (nome.length < 6){
+            mostrarMensagem("O campo nome deve possuir no mínimo 6 caracteres");
+            return false;
+        }
+
+        if (telefone.trim() == ""){
+            mostrarMensagem("Preencha o campo telefone");
+            return false;
+        } else if (telefone.length != 16){
+            mostrarMensagem("O telefone deve ter exatamente 15 números, no formato (NN) N NNNN-NNNN");
+            return false;
+        } else {
+            var valido = true;
+            for (var i = 0; i < telefone.length; i++){
+                var digito = telefone[i];
+                if (!(digito >= '0' && digito <= '9' || 
+                    digito == ' ' || digito == '(' || digito == ')' || digito == '-')){
+                    valido = false;
+                }
+            }
+
+            if (!valido){
+                mostrarMensagem("O telefone deve conter somente números");
+                return false;
+            }
+        }
+
+        if (email.trim() == ""){
+            mostrarMensagem("Preencha o campo e-mail");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+<form method="post" action="#" 
+    onsubmit="return validar();">
+
+    <div id="mensagem"></div>
+
+    <label>Nome</label><br />
+    <input type="text" id="nome" name="nome" /><br />
+
+    <label>Telefone</label><br />
+    <input type="text" id="telefone" name="telefone" /><br />
+
+    <label>E-mail</label><br />
+    <input type="email" id="email" name="email" /><br />
+    <br />
+
+    <input type="submit" value="Enviar" />
+</form>
