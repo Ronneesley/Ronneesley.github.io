@@ -1,0 +1,107 @@
+<h2>Todos Elementos de Formulário</h2>
+
+<fieldset>
+    <legend>Cadastro de Pessoas</legend>
+
+    <form>
+        <label for="nome">Nome</label><br />
+        <input type="text" name="nome" id="nome" />
+        <br /><br />
+
+        <label for="data_nascimento">Data Nascimento</label><br />
+        <input type="date" name="data_nascimento" id="data_nascimento" />
+        <br /><br />
+
+        <label for="data_inicio">Início do agendamento</label><br />
+        <input type="datetime-local" name="data_inicio" id="data_inicio" />
+        <br /><br />
+
+        <label for="hora_nasc">Hora de Nascimento</label><br />
+        <input type="time" name="hora_nasc" id="hora_nasc" />
+        <br /><br />
+
+        <label for="semana_evento">Semana do Evento</label><br />
+        <input type="week" name="semana_evento" id="semana_evento" />
+        <br /><br />
+
+        <label for="cor">Cor Preferida</label><br />
+        <input type="color" name="cor" id="cor" />
+        <br /><br />
+
+        <label for="email">E-mail</label><br />
+        <input type="email" name="email" id="email" />
+        <br /><br />
+
+        <label for="foto">Foto para o perfil</label><br />
+        <input type="file" name="foto" id="foto" />
+        <br /><br />
+
+        <label for="mes_termino">Término do curso</label><br />
+        <input type="month" name="mes_termino" id="mes_termino" />
+        <br /><br />
+
+        <label for="idade">Idade</label><br />
+        <input type="number" name="idade" id="idade" />
+        <br /><br />
+
+        <label for="telefone">Telefone</label><br />
+        <input type="tel" name="telefone" id="telefone" />
+        <br /><br />
+
+        <label for="senha">Senha</label><br />
+        <input type="password" name="senha" id="senha" />
+        <br /><br />
+
+        <label for="volume">Volume</label><br />
+        <input type="range" name="volume" id="volume" min="0" max="10" step="1" value="3" />
+        <br /><br />
+
+        <label for="pesquisa">O que você procura</label><br />
+        <input type="serach" name="pesquisa" id="pesquisa" />
+        <br /><br />
+
+        <label for="sexo">Sexo</label><br />
+        <select name="sexo" id="sexo">
+            <option value="m">Masculino</option>
+            <option value="f">Feminino</option>
+        </select>
+        <br /><br />
+
+        <label>Interesses</label><br />
+        <input type="checkbox" name="interresse" value="programacao" />
+        Programação
+        <input type="checkbox" name="interresse" value="design" />
+        Design
+        <input type="checkbox" name="interresse" value="analise" />
+        Análise de Sistemas
+        <br /><br />
+
+        <label>Estado Civil</label><br />
+        <input type="radio" name="estado_civil" value="solteiro" />
+        Solteiro
+        <input type="radio" name="estado_civil" value="casado" />
+        Casado
+        <input type="radio" name="estado_civil" value="divorciado" />
+        Divorciado
+        <br /><br />
+
+        <label for="endereco">URL</label><br />
+        <input type="url" name="endereco" id="endereco" />
+        <br /><br />
+
+
+        <label for="texto">Texto</label><br />
+        <textarea name="texto" id="texto" rows="5" cols="40"></textarea><br />
+        <br />
+
+        <!-- VER APLICAÇÃO
+        <label for="imagem">Imagem</label><br />
+        <input type="image" name="imagem" id="imagem" />
+        <br /><br />
+        -->
+
+        <input type="reset" value="Limpar formulário" />
+        <input type="button" value="Botão" />
+        <input type="submit" value="Botão de Envio" />
+    </form>
+</fieldset>
