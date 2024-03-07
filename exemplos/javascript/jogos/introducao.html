@@ -1,0 +1,49 @@
+<h2>Game Loop e Lógica de Programação</h2>
+
+<canvas id="desenho" width="500" height="200"></canvas>
+
+<script>
+    var c = document.getElementById("desenho");
+    var ctx = c.getContext("2d");
+
+    var intervalo = 10;
+
+    var w = 500;
+    var h = 200;
+
+    var y = 100;
+    var x = 250;
+
+    var vx = 1;
+    var vy = 1;
+
+    setInterval(gameLoop, intervalo);
+
+    function gameLoop(){
+        if (x + vx > w || x + vx < 0){
+            vx *= -1;
+        }
+
+        if (y + vy > h || y + vy < 0){
+            vy *= -1;
+        }
+
+        x += vx;
+        y += vy;
+
+        desenhar();
+    }
+
+    function desenhar(){
+        ctx.clearRect(0, 0, w, h);
+
+        ctx.strokeRect(0, 0, w, h);
+
+        ctx.beginPath();
+        ctx.arc(x, y, 10, 0, 2 * Math.PI)            
+        ctx.stroke();
+
+        ctx.fillStyle = "blue";
+        ctx.fill();
+    }
+</script>    
