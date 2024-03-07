@@ -1,0 +1,62 @@
+<body onkeydown="mover(event)" onkeyup="liberar()">
+    <h2>Entrada via teclado</h2>
+
+    <p>
+        Aperte A ou D para movimentar
+    </p>
+
+    <canvas id="desenho" width="500" height="200"></canvas>
+
+    <script>
+        var c = document.getElementById("desenho");
+        var ctx = c.getContext("2d");
+
+        var intervalo = 10;
+
+        var w = 500;
+        var h = 200;
+
+        var yp = 180;
+        var xp = 250;
+
+        var wp = 50;
+        var hp = 10;
+
+        var vx = 0;
+        var vy = 0;
+
+        setInterval(gameLoop, intervalo);
+
+        function liberar(){
+            vx = 0;
+        }
+
+        function mover(e){
+            if (e.keyCode == 65 || e.keyCode == 97){
+                vx = -10;
+            }
+
+            if (e.keyCode == 68 || e.keyCode == 100){
+                vx = 10;
+            }
+        }
+
+        function gameLoop(){
+            if (xp + vx + wp < w && xp + vx > 0){
+                xp += vx;
+            }
+
+            desenhar();
+        }
+
+        function desenhar(){
+            ctx.clearRect(0, 0, w, h);
+
+            ctx.strokeRect(0, 0, w, h);
+
+            ctx.fillStyle = "blue";
+            ctx.strokeRect(xp, yp, wp, hp);
+            ctx.fillRect(xp, yp, wp, hp);
+        }
+    </script>
+</body>
