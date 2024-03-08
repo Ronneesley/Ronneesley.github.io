@@ -1,0 +1,147 @@
+<script>
+class Palco {
+    w;
+    h;
+
+    constructor(w, h){
+        this.w = w;
+        this.h = h;
+    }
+
+    desenhar(ctx){
+        ctx.strokeRect(0, 0, this.w, this.h);
+    }
+}
+
+class Jogador {
+    x;
+    y;
+    w;
+    h;
+    vx;
+    palco;
+    cor;
+
+    constructor(palco, x, y){
+        this.palco = palco;
+        this.x = x;
+        this.y = y;
+        this.w = 50;
+        this.h = 10;
+        this.vx = 0;
+        this.cor = "blue";
+    }
+
+    mover(){
+        if (this.x + this.vx + this.w < this.palco.w && 
+            this.x + this.vx > 0){
+            this.x += this.vx;
+        }
+    }
+
+    desenhar(ctx){
+        ctx.fillStyle = this.cor;
+        ctx.strokeRect(this.x, this.y, this.w, this.h);
+        ctx.fillRect(this.x, this.y, this.w, this.h);
+    }
+
+    liberar(){
+        this.vx = 0;
+    }
+}
+
+class Bola {
+    x;
+    y;
+    r;
+    vx;
+    vy;
+    palco;
+    cor;
+
+    constructor(palco, x, y){
+        this.palco = palco;
+        this.x = x;
+        this.y = y;
+        this.r = 10;
+        this.vx = 1;
+        this.vy = 1;
+        this.cor = "red";
+    }
+
+    mover(){
+        if (this.x + this.vx > palco.w || 
+            this.x + this.vx < 0){
+            this.vx *= -1;
+        }
+
+        if (this.y + this.vy > palco.h || 
+            this.y + this.vy < 0){
+            this.vy *= -1;
+        }
+
+        this.x += this.vx;
+        this.y += this.vy;
+    }
+
+    desenhar(){
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI)            
+        ctx.stroke();
+
+        ctx.fillStyle = this.cor;
+        ctx.fill();
+    }
+}
+</script>
+
+<body onkeydown="mover(event)" onkeyup="liberar()">
+    <h2>Jogo</h2>
+
+    <p>
+        Aperte A ou D para movimentar
+    </p>
+
+    <canvas id="desenho" width="500" height="200"></canvas>
+
+    <script>
+        var c = document.getElementById("desenho");
+        var ctx = c.getContext("2d");
+
+        var intervalo = 10;
+
+        var palco = new Palco(500, 200);
+        var jogador = new Jogador(palco, 250, 180);
+        var bola = new Bola(palco, 250, 100);
+
+        setInterval(gameLoop, intervalo);
+
+        function liberar(){
+            jogador.liberar();
+        }
+
+        function mover(e){
+            if (e.keyCode == 65 || e.keyCode == 97){
+                jogador.vx = -10;
+            }
+
+            if (e.keyCode == 68 || e.keyCode == 100){
+                jogador.vx = 10;
+            }
+        }
+
+        function gameLoop(){
+            jogador.mover();
+            bola.mover();
+            desenhar();
+        }
+
+        function desenhar(){
+            ctx.clearRect(0, 0, palco.w, palco.h);
+
+            palco.desenhar(ctx);
+            jogador.desenhar(ctx);
+            bola.desenhar(ctx);
+        }
+    </script>
+</body>
