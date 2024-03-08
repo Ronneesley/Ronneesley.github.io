@@ -17,6 +17,10 @@ p.ident {
 
 body {    
     font-size: 18px;
+    text-align: justify;
+    line-height: 1.5em;
+    color: #333;
+    font-size: 20px;
 }
 
 code {
@@ -72,4 +76,18 @@ blockquote {
     margin-left: 0px;
     padding-left: 1em;
     border-left: 4px solid #e2e2e2;
+}
+
+table.tabela {
+    border: 1px solid #333;
+    border-collapse: collapse;
+}
+
+table.tabela td {
+    border: 1px solid #333; 
+    padding: 10px;   
+}
+
+.bg-cinza { 
+    background-color: lightgray;
 }
