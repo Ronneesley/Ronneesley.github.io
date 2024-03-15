@@ -81,6 +81,7 @@ blockquote {
 table.tabela {
     border: 1px solid #333;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 table.tabela td {
@@ -90,4 +91,10 @@ table.tabela td {
 
 .bg-cinza { 
     background-color: lightgray;
+}
+
+.video_yt {
+    width: 100%;
+    height: 56.25%;
+    box-shadow: 5px 10px #bbb;
 }
