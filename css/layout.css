@@ -4,15 +4,15 @@ body {
 }
 
 #layout {
-	width: 100%;
+	width: 100vw;
 }
 
 #topo {
 	display: flex;
 	font-size: 30px;
-	background-color: #f4f4f4;
+	background-color: #e2e2e2;
 	padding: 20px;
-	border: 1px solid #e2e2e2;
+	border: 1px solid #999;
 	align-items: center;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 #menu {
-	border: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
 	padding: 0px;
 	flex-shrink: 0;
 	flex-basis: 250px;
@@ -44,9 +44,9 @@ body {
 }
 
 #rodape {
-	background-color: #f4f4f4;
+	background-color: #e2e2e2;
 	color: grey;
 	padding: 20px;
 	text-align: right;
-	border: 1px solid #e2e2e2;
+	border: 1px solid #999;
 }
