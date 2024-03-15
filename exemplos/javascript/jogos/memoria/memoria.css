@@ -1,0 +1,9 @@
+.jogo_memoria {
+    background-color: green;
+    width: 600px;
+    height: 600px;
+}
+
+div.jogo_memoria div {
+    background-color: blue;
+}
