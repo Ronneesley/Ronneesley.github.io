@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Meu primeiro site</title>
+
+        <style>
+            #topo {
+                height: 100px;
+                background-color: #e2e2e2;
+                border: 1px solid #333;
+                padding: 10px;
+            }
+
+            .pessoa {
+                height: 80px;
+                width: 150px;
+                background-color: aquamarine;
+                border: 1px solid #333;
+                padding: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                float: left;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="topo">
+    		<h1>Oi {{ name }}!</h1>
+        </div>
+
+        E agora? Quanto dá a conta? {{ conta }}
+        
+        <h2>Pessoas</h2>
+
+        {% for p in pessoas %}
+            <div class="pessoa">
+                <strong>{{ p.nome }}</strong>
+
+                <p>
+                    Mora na cidade: {{ p.cidade }}
+                </p>
+            </div>
+        {% endfor %}
+	</body>
+</html>

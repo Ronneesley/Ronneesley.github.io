@@ -1,0 +1,11 @@
+{
+    "autoload": {
+       "psr-4": {
+            "modelo\\": "modelo/"
+        }
+     },
+
+    "require": {
+        "propel/propel": "~2.0@beta"
+    }
+}

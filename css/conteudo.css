@@ -94,7 +94,7 @@ table.tabela td {
 }
 
 .video_yt {
-    width: 100%;
-    height: 56.25%;
+    margin: 0 auto;
     box-shadow: 5px 10px #bbb;
+    display: block;
 }

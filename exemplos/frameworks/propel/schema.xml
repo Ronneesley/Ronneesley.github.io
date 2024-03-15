@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" defaultIdMethod="native" namespace="\modelo" defaultPhpNamingMethod="underscore">
+  <table name="livros" idMethod="native" phpName="Livros">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="50"/>
+    <column name="descricao" phpName="Descricao" type="LONGVARCHAR"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+</database>

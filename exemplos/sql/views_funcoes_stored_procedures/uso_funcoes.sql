@@ -1,0 +1,1 @@
+select quadrado(8)

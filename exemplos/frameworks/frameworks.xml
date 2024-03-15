@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frameworks.xsl"?>
+<frameworks>
+    <linguagem nome="python">
+        <framework nome="BeautifulSoup"
+            url="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+            versao="4.11.0">
+            <avaliacao
+                visualsite="regular"
+                qualidadedocumentacao="bom"
+                funcionou="sim">
+            </avaliacao>
+        </framework>
+    </linguagem>
+
+    <linguagem nome="php">
+        <framework nome="Propel" 
+            url="https://propelorm.org"
+            versao="2.0@beta">
+            <avaliacao 
+                visualsite="bom"
+                qualidadedocumentacao="ruim"
+                funcionou="sim">
+
+                <observacao>
+                    Foi necessário instalar as extensões do PHP:
+                    php-xml
+                    que não foram mencionadas na documentação.
+
+                    Além disso, não foi mencionado que era necessário
+                    utilizar a PSR-4 mesmo seguindo o "Easy Way" da
+                    documentação
+                </observacao>
+            </avaliacao>
+        </framework>
+
+        <framework  nome="Twig" 
+                    url="https://twig.symfony.com/"
+                    versao="3.0">
+            <avaliacao
+                visualsite="regular"
+                qualidadedocumentacao="regular"
+                funcionou="sim">
+                <observacao>
+                    Apesar de ambos exemplos funcionarem.
+                    O segundo exemplo não mencionou o comando de require_once.
+                    Além disso não comentou sobre a criação dos diretórios e da configuração de permissão para que o usuário do servidor web (www-data) pudesse escrever no diretório de cache.
+                    Adicionalmente o cache não atualiza após a modificação do arquivo de template.
+                </observacao>
+            </avaliacao>
+        </framework>
+
+        <framework nome="Smarty" url="http://smarty.net/" versao="4.3.0">
+            <avaliacao
+                visualsite="muito ruim"
+                qualidadedocumentacao="boa"
+                funcionou="sim">
+                <observacao>
+                    No momento que mencionou o diretório de compilação, não indicou qual diretório entre os 4 diretórios exigidos pelo framework era o de compilação (templates_c).
+                </observacao>
+            </avaliacao>
+        </framework>
+    </linguagem>
+</frameworks>
