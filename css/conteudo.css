@@ -23,7 +23,8 @@ body {
     font-size: 20px;
 }
 
-code {
+code:not([class]),
+code.destaque {
     font-size: 18px;
     background-color: bisque;
     opacity: 0.8;

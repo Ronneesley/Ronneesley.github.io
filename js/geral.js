@@ -2,6 +2,8 @@ $(document).ready(function(){
     function carregar(href){
         $("#conteudo").load(href, function(){
             $("#conteudo a").click(processarLink);
+
+            hljs.highlightAll();
         });
     }
 

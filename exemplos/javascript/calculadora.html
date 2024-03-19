@@ -23,3 +23,22 @@
 	onclick="somar();" />
 
 <div id="resultado"></div>
+
+<h2>Código</h2>
+
+JavaScript
+<pre><code class="language-javascript">function somar(){
+	var n1 = document.getElementById("numero1").value;
+	var n2 = document.getElementById("numero2").value;
+
+	var r = parseInt(n1) + parseInt(n2);
+
+	document.getElementById("resultado").innerHTML = r;
+}
+</code></pre>
+
+HTML
+<pre><code class="language-xml">&lt;input type="number" id="numero1" /&gt;
+	
+&lt;input type="number" id="numero2" /&gt;
+</code></pre>
