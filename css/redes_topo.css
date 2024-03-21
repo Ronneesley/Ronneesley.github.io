@@ -1,0 +1,22 @@
+#layout header ul {
+    list-style: none;    
+}
+
+#layout header ul li {
+    float: left;
+    margin-left: 10px;
+}
+
+#layout header ul li a {
+    text-decoration: none;
+    border: none;
+}
+
+#layout header ul li a:hover {
+    background-color: none;
+}
+
+#layout header ul li img {
+    width: 30px;
+    height: 30px;
+}
