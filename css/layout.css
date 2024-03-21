@@ -7,16 +7,20 @@ body {
 	width: 100vw;
 }
 
-#topo {
+#layout header {
 	display: flex;
-	font-size: 30px;
 	background-color: #e2e2e2;
 	padding: 20px;
 	border: 1px solid #999;
 	align-items: center;
 }
 
-#topo img.logo {
+#layout header h1 {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#layout header img.logo {
 	border-radius: 1000px;
 	width: 50px;
 	height: 50px;
@@ -29,7 +33,7 @@ body {
 	min-height: 400px;
 }
 
-#menu {
+#layout nav {
 	border-right: 1px solid #e2e2e2;
 	padding: 0px;
 	flex-shrink: 0;
@@ -37,13 +41,14 @@ body {
 	background-color: #f4f4f4;
 }
 
-#conteudo {
+#layout main {
 	border: 1px solid #e2e2e2;
 	padding: 10px;
 	width: 100%;
+	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#rodape {
+#layout footer {
 	background-color: #e2e2e2;
 	color: grey;
 	padding: 20px;

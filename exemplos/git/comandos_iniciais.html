@@ -5,8 +5,21 @@
 <p>Para copiar os arquivos de um
 repositório para o seu computador:</p>
 
-<strong>git clone URL</strong>
+<pre><code class="language-bash">git clone URL</code></pre>
 <br />
+
+<div class="figura">
+    <img src="/exemplos/git/imagens/onde_esta_url.png" alt="Posicionamento da URL" />
+</div>
+
+<h3>É sua primeira vez usando comandos Git?</h3>
+
+<p>Na sua primeira vez utilizando o Git será exigido a configuração
+    do seu e-mail e do seu nome:</p>
+
+<pre><code class="language-bash">git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code></pre>
 
 <h3>Como enviar as minhas modificações?</h3>
 
@@ -14,29 +27,26 @@ repositório para o seu computador:</p>
 os arquivos que foram editados ou 
 adicionados ao projeto:</p>
 
-<strong>git add -A</strong>
-<br />
-
-<p>Na sua primeira vez utilizando o Git será exigido a configuração
-    do seu e-mail e do seu nome:</p>
-
-<strong>git config --global user.email "you@example.com"</strong>
-<br />
-<strong>git config --global user.name "Your Name"</strong>
-<br />
+<pre><code class="language-bash">git add -A</code></pre>
 
 <p>Para descrever o que foi realizado 
     na submissão</p>
 
-<strong>git commit -m "Mensagem do que foi feito"</strong>
-<br />
+<pre><code class="language-bash">git commit -m "Mensagem do que foi feito"</code></pre>
 
 <p>Para enviar os arquivos ao servidor
     Git, seja ele GitHub, GitLab, etc.
 </p>
 
-<strong>git push</strong>
-<br />
+<pre><code class="language-bash">git push</code></pre>
+
+<h3>Como descobrir o que foi modificado?</h3>
+
+<p>O comando a seguir permite que você veja quais 
+    arquivos foram adicionados, removidos e modificados.
+</p>
+
+<pre><code class="language-bash">git status</code></pre>
 
 <h3>Como obter as últimas modificações?</h3>
 
@@ -47,8 +57,7 @@ adicionados ao projeto:</p>
     diretório de trabalho:
 </p>
 
-<strong>git pull</strong>
-<br />
+<pre><code class="language-bash">git pull</code></pre>
 
 <h3>Observações para uso do GitHub</h3>
 

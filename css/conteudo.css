@@ -4,11 +4,15 @@ h2 {
     border-left: 5px solid #333;
 }
 
+h3 {
+    color: #555;
+}
+
 p {
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.25rem;
     color: #333;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 p.ident {
@@ -98,4 +102,14 @@ table.tabela td {
     margin: 0 auto;
     box-shadow: 5px 10px #bbb;
     display: block;
+}
+
+div.figura {
+    text-align: center;
+}
+
+div.figura img,
+img.figura {
+    border: 2px solid #888;
+    box-shadow: #aaa 10px 10px 30px;
 }

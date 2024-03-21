@@ -5,9 +5,7 @@
 		
 		<meta charset="UTF-8">		
 		
-		<link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" href="css/layout.css">
-		<link rel="stylesheet" href="css/conteudo.css" />
+		<link rel="stylesheet" href="css/estilo.css">
 		<link rel="stylesheet" href="/js/highlight/styles/agate.min.css">
 		
 		<base target="conteudo">
@@ -20,14 +18,34 @@
 	</head>
 	<body>
 		<div id="layout">
-			<div id="topo">
+			<header>
 				<img class="logo" src="https://yt3.googleusercontent.com/V-GfgClSK_BMKcw0mz7D6G0IMGdEsprUFmFkuniaLxBi-Pa43QSKAKTRvptZLXW6JaQ74JJp_w=s176-c-k-c0x00ffffff-no-rj" alt="Logomarca" />
 
-				Portal de Materiais Didáticos do Prof. Roni
-			</div>
+				<h1>Portal de Materiais Didáticos do Prof. Roni</h1>
+
+				<ul>
+					<li>
+						<a href="https://www.youtube.com/@profroni" target="_blank">
+							<img src="imagens/youtube.png" alt="YouTube" />
+						</a>
+					</li>
+
+					<li>
+						<a href="https://github.com/Ronneesley" target="_blank">
+							<img src="imagens/github.png" alt="GitHub" />
+						</a>
+					</li>
+
+					<li>
+						<a href="http://lattes.cnpq.br/5291472167140786" target="_blank">
+							<img src="imagens/lattes.jpeg" alt="Currículo Lattes" />
+						</a>
+					</li>
+				</ul>
+			</header>
 			
 			<div id="meio">
-				<div id="menu">
+				<nav id="menu">
 					<ul class="menu">
 						<li><a href="pagina_inicial.html">Página Inicial</a></li>
 						<li class="submenu">
@@ -45,31 +63,25 @@
 							</ul>
 						</li>
 
-						<li><a href="https://www.youtube.com/@profroni" target="_blank">Canal do YouTube</a></li>
-
-						<li><a href="https://github.com/Ronneesley" target="_blank">GitHub</a></li>
-
-						<li><a href="https://github.com/Ronneesley/ronneesley.github.io" target="_blank">GitHub desta Página</a></li>
-
-						<li><a href="http://lattes.cnpq.br/5291472167140786" target="_blank">Currículo Lattes</a></li>
-
 						<li><a href="softwares_recomendados.html">Softwares Recomendados</a></li>
 
 						<li><a href="livros_recomendados.html">Livros Recomendados</a></li>
 
 						<li><a href="meus_livros.html">Meus Livros</a></li>
+
+						<li><a href="https://github.com/Ronneesley/ronneesley.github.io" target="_blank">GitHub desta Página</a></li>
 					</ul>
-				</div>
+				</nav>
 				
-				<div id="conteudo"></div>
+				<main id="conteudo"></main>
 			</div>
 			
-			<div id="rodape">
+			<footer>
 				Prof. Ronneesley Moura Teles
 				<br />
 
 				Materiais did&aacute;ticos &copy; 2024
-			</div>
+			</footer>
 		</div>
 	</body>
 </html>
