@@ -7,28 +7,11 @@ ul.menu {
     padding: 0px;
 }
 
-ul.menu li.submenu {
-    margin: 0px;
-    padding: 0px;
-}
-
-ul.submenu {
-    margin: 0px;
-    padding-left: 0px;
-    border-left: 10px solid #888;
-}
-
 ul.menu li {
     padding: 10px;
     border: 1px solid #999;
     margin-bottom: 2px;
     background-color: #e2e2e2;
-    margin: 0px;
-}
-
-ul.submenu li {
-    border: 1px solid #999;
-    background-color: #f0f0f0;
     margin: 0px;
 }
 
@@ -40,4 +23,45 @@ ul.menu li a {
 
 ul.menu li:hover {
     background-color: #f4f4f4;
+}
+
+/**
+ * Submenu
+ */
+ul.menu li.submenu {
+    margin: 0px;
+    padding: 0px;    
+}
+
+ul.menu li.submenu div {
+    padding: 10px;
+    border-left: 5px solid #555;
+}
+
+ul.menu li.submenu ul {
+    position: relative;
+    left: 235px;
+    top: -50px;
+    height: 0px;
+}
+
+ul.submenu {
+    margin: 0px;
+    padding-left: 0px;
+    border-left: 10px solid #888;
+}
+
+ul.submenu li {
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+    margin: 0px;
+}
+
+ul.menu li.submenu ul {
+    display: none;
+}
+
+ul.menu li.submenu:hover ul {
+    display: block;
+    background-color: red !important;
 }
