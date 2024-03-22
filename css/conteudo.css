@@ -42,12 +42,12 @@ li {
     line-height: 1.5;
 }
 
-a { 
+main a {
     text-decoration: none;
     border-bottom: 1px dashed lightblue;
 }
 
-a:hover {
+main a:hover {
     border-bottom: 1px dashed blue;
     background-color: #f5f5ff;
 }
