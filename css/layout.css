@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/fontes/Roboto/Roboto-Regular.ttf);
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #e2e2e2;
+	font-family: Roboto, sans-serif;
 }
 
 #layout {
@@ -34,7 +40,6 @@ body {
 	border: 1px solid #e2e2e2;
 	padding: 10px;
 	width: 100%;
-	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #layout footer {

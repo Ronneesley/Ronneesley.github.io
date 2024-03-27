@@ -1,0 +1,47 @@
+div.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+div.card img {
+    width: 150px;
+    height: 150px;
+}
+
+div.card p.titulo,
+div.card p.descricao {
+    text-align: left;
+    text-indent: 0px !important;
+}
+
+div.card p.titulo {
+    font-weight: 600;
+    font-size: 32px !important;
+}
+
+div.card p.descricao {
+    font-size: 20px !important;
+}
+
+div.card a {
+    border: 2px solid black;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px;
+    color: #333;
+}

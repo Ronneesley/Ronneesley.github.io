@@ -8,15 +8,16 @@ h3 {
     color: #555;
 }
 
-p {
+#conteudo p {
     text-align: justify;
     line-height: 1.5em;
     color: #333;
     font-size: 22px;
+    text-indent: 30px;
 }
 
-p.ident {
-    text-indent: 30px;
+#conteudo p.nident {
+    text-indent: 0px;
 }
 
 body {    

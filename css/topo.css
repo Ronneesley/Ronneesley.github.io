@@ -1,7 +1,9 @@
-#layout header div.titulo {
+#layout header div.titulo a {
 	padding-top: 10px;
 	display: flex;
 	align-items: center;
+	text-decoration: none;
+	color: #333;
 }
 
 #layout header img.logo {
