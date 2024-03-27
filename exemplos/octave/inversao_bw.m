@@ -13,8 +13,8 @@ IPB = im2bw(IG, 0.9);
 IBP = 1 - IPB;
 
 #Armazena a imagem em escala de cinza
-imwrite(IPB, "inversao_pb.jpg");
-imwrite(IBP, "inversao_bp.jpg");
+imwrite(IPB, "folha_inversao_pb.jpg");
+imwrite(IBP, "folha_inversao_bp.jpg");
 
 #Mostra a imagem
 imshow(IPB)

@@ -4,6 +4,7 @@ $(document).ready(function(){
             $("#conteudo a").click(processarLink);
 
             carregamentoCodigos();
+
             hljs.highlightAll();
         });
     }
@@ -19,18 +20,48 @@ $(document).ready(function(){
     function carregamentoCodigos(){
         $("code").each(function(index){
             var codigo = $(this);
-            var pedacos = $(this).attr("class").split(" ")
 
-            for (let i = 0; i < pedacos.length; i++){
-                let pedaco = pedacos[i];
-                
-                if (pedaco.startsWith("codigo:")){
-                    let caminho = pedaco.substring(7);
+            if (typeof codigo.attr("class") != "undefined"){
+                var pedacos = $(this).attr("class").split(" ");
 
-                    codigo.load(caminho);
+                if (pedacos.length == 2){
+                    let linguagem = pedacos[0];
+                    let src = pedacos[1];
+                    
+                    if (src.startsWith("codigo:")){
+                        let caminho = src.substring(7);
+        
+                        if (linguagem == "language-html"){
+                            $.ajax({
+                                url: caminho
+                            }).done(function(html){
+                                const highlightedCode = hljs.highlight(html, {'language': 'xml'}).value;
+
+                                codigo.html(highlightedCode);
+                            });
+                        } else {
+                            $.ajax({
+                                url: caminho
+                            }).done(function(html){
+                                let nomeLinguagem = linguagem.split("-")[1];
+                                const highlightedCode = hljs.highlight(html, {'language': nomeLinguagem}).value;
+
+                                codigo.html(highlightedCode);
+                            });
+                        }
+                    }
                 }
             }
         });
+    }
+
+    function escapeHtml(unsafe){
+        return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
     }
 
     $("a").click(processarLink);
