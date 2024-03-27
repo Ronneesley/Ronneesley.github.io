@@ -6,19 +6,24 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #e2e2e2;
+	background-color: white;
 	font-family: Roboto, sans-serif;
 }
 
 #layout {
-	width: 98vw;
+	width: 95vw;
 	margin: 0 auto;
+	margin-top: 10px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	box-shadow: 0 0 30px 1px;
 }
 
 #layout header {
 	background-color: #e2e2e2;
 	border: 1px solid #999;
-	padding-left: 20px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }
 
 #meio {

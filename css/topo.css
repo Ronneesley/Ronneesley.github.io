@@ -1,4 +1,4 @@
-#layout header div.titulo a {
+/*#layout header div.titulo a {
 	padding-top: 10px;
 	display: flex;
 	align-items: center;
@@ -16,4 +16,10 @@
 #layout header h1 {
 	font-size: 30px;
 	font-weight: normal;
+}*/
+
+#layout header img.topo {
+	width: 100%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }

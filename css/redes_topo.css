@@ -1,28 +1,41 @@
-#layout header ul {
+div.redes_sociais {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 91%;
+    top: 29%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.redes_sociais ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin-right: 10px;    
 }
 
-#layout header ul li {
+div.redes_sociais li {
     padding: 0px;
     margin: 0px;
     margin-left: 10px;
 }
 
-#layout header ul li a {
+div.redes_sociais ul li a {
     text-decoration: none;
     border: none;
 }
 
-#layout header ul li a:hover {
+div.redes_sociais ul li a:hover {
     background-color: none;
 }
 
-#layout header ul li img {
+div.redes_sociais ul li img {
     width: 25px;
     height: 25px;
 }
