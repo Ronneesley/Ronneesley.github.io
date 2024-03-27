@@ -1,7 +1,7 @@
 pkg load image;
 
 #Leitura da folha
-I = imread("folha.jpg");
+I = imread("imagens/folha.jpg");
 
 #Imagem em escala de cinza
 IG = rgb2gray(I);
@@ -16,7 +16,7 @@ IBP = 1 - IPB;
 IBF = imfill(IBP, "holes");
 
 #Armazena a imagem em escala de cinza
-imwrite(IBF, "folha_preenchida.jpg");
+imwrite(IBF, "imagens/folha_preenchida.jpg");
 
 #Mostra a imagem
 imshow(IBF)

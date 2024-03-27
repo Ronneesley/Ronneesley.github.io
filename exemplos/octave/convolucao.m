@@ -1,7 +1,7 @@
 pkg load image;
 
 #Leitura da folha
-I = imread("folha.jpg");
+I = imread("imagens/folha.jpg");
 
 #Imagem em escala de cinza
 IG = rgb2gray(I);
@@ -35,7 +35,7 @@ for i = 2:n - 1
 endfor
 
 #Armazena a imagem da convolução
-imwrite(C, "folha_convolucao.jpg");
+imwrite(C, "imagens/folha_convolucao.jpg");
 
 #Exibindo a image
 imshow(C)
