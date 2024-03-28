@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 01</title>
+        <meta charset="utf-8">
+
+        <script>
+            var idade;
+            var soma = 0;
+            var quantidade = 0;
+            var media;
+
+            do {
+                idade = parseInt(prompt("Digite a idade do indivíduo: "));
+
+                soma = soma + idade;
+                quantidade = quantidade + 1;
+            } while (idade != 0);
+
+            media = soma / (quantidade - 1);
+
+            alert("A média das idades é: " + media);
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

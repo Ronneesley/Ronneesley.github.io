@@ -114,3 +114,14 @@ img.figura {
     border: 2px solid #888;
     box-shadow: #aaa 10px 10px 30px;
 }
+
+div.sumario {
+    background-color: lightyellow;
+    border: 1px dashed orange;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+div.sumario span {
+    font-weight: bold;
+}

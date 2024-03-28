@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+
+    <script>
+        var quantidadeCaixas = 1;
+
+        function adicionarCampo(){
+            const texto = document.createTextNode("Idade ");
+            const input = document.createElement("input");
+
+            input.setAttribute("id", "idade" + quantidadeCaixas);
+
+            document.getElementById("novos_campos").appendChild(texto);
+            document.getElementById("novos_campos").appendChild(input);
+            document.getElementById("novos_campos").appendChild(document.createElement("br"));
+            document.getElementById("novos_campos").appendChild(document.createElement("br"));
+
+            quantidadeCaixas++;
+        }
+
+        function calcular(){
+            var idade;
+            var soma = 0;
+            var quantidade = 0;
+            var media;
+
+            for (let i = 0; i < quantidadeCaixas; i++){
+                idade = parseInt(document.getElementById("idade" + i).value);
+
+                soma = soma + idade;
+                quantidade = quantidade + 1;
+            }
+
+            media = soma / quantidade;
+
+            document.getElementById("media").innerHTML = media;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <button type="button" onclick="adicionarCampo()">+</button>
+        <button type="button" onclick="calcular()">Calcular</button>
+        <br /><br />
+
+        
+        Idade
+        <input type="number" id="idade0" value="" />
+        <br /><br />
+
+        <div id="novos_campos">            
+        </div>
+
+        Média:
+        <div id="media"></div>
+    </form>
+    
+</body>
+</html>
