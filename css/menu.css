@@ -1,43 +1,65 @@
+:root {
+    --cor-borda: #F2A391;
+    --cor-fundo: #F2B705;
+    --cor-texto: black;
+    --cor-fundo-hover: #05DBF2;
+}
+
+ul.menu,
+ul.menu ul {
+    border-right: 1px solid var(--cor-borda);
+}
+
+ul.menu ul {
+    border-left: 1px solid var(--cor-borda);
+}
+
 ul.menu, 
 ul.menu ul,
 ul.menu li.submenu {
     list-style: none;
     margin: 0px;
-    padding: 0px;
+    padding: 0px;    
+    border-top: 1px solid var(--cor-borda);
 }
 
 ul.menu li {
     z-index: 1000;
 }
 
+ul.menu li.item {
+    border-left: 3px solid var(--cor-borda);
+}
+
 ul.menu li.item,
 ul.menu li.submenu span {        
-    background-color: #e2e2e2;
-    border: 1px solid #999;
+    background-color: var(--cor-fundo);
+    border-bottom: 1px solid var(--cor-borda);
 }
 
 ul.menu li.item a,
 ul.menu li.submenu span {
     padding: 10px;
     display: block;
+    color: var(--cor-texto);
 }
 
 ul.menu li.item a {    
     text-decoration: none;
-    color: #222;
     border-bottom: none;
 }
 
 ul.menu li.item:hover,
-ul.menu li.submenu:hover span {
-    background-color: #f4f4f4;
+ul.menu li.submenu:hover > span,
+ul.menu li.submenu span:hover {
+    background-color: var(--cor-fundo-hover);
 }
 
 /**
  * Submenu
  */
 ul.menu li.submenu span {
-    border-left: 5px solid #555;
+    border-left: 3px solid var(--cor-borda);
 }
 
 /* Faz todo ul filho de um li ficar oculto */

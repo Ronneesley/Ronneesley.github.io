@@ -1,4 +1,8 @@
-h2 {
+#conteudo > h2 {
+    margin-top: 0px;
+}
+
+#conteudo h2 {
     border-bottom: 1px dashed #333;
     padding-left: 10px;
     border-left: 5px solid #333;
@@ -18,14 +22,6 @@ h3 {
 
 #conteudo p.nident {
     text-indent: 0px;
-}
-
-body {    
-    font-size: 18px;
-    text-align: justify;
-    line-height: 1.5em;
-    color: #333;
-    font-size: 20px;
 }
 
 code:not([class]),

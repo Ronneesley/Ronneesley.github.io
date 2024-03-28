@@ -18,6 +18,10 @@
 	font-weight: normal;
 }*/
 
+#layout header a {
+	line-height: 0px;
+}
+
 #layout header img.topo {
 	width: 100%;
 	border-top-left-radius: 30px;

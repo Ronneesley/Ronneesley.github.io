@@ -2,8 +2,8 @@ div.redes_sociais {
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 91%;
-    top: 29%;
+    right: 10px;
+    bottom: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     border-radius: 20px;
