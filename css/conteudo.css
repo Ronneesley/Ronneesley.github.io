@@ -78,6 +78,9 @@ blockquote {
     margin-left: 0px;
     padding-left: 1em;
     border-left: 4px solid #e2e2e2;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 table.tabela {
@@ -103,10 +106,12 @@ table.tabela td {
 
 div.figura {
     text-align: center;
+    padding: 10px;
 }
 
 div.figura img,
 img.figura {
+    padding: 10px;
     border: 2px solid #888;
     box-shadow: #aaa 10px 10px 30px;
 }
@@ -120,4 +125,13 @@ div.sumario {
 
 div.sumario span {
     font-weight: bold;
+}
+
+.lado {
+    float: left;
+    margin-right: 20px;
+}
+
+.clear {
+    clear: both;
 }

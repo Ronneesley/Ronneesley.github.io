@@ -1,0 +1,84 @@
+<h2>Teorema de Bayes</h2>
+
+<p>
+    Descreve a probabilidade de um evento dado um conhecimento prévio (<code>a priori</code>).
+    Veja o seguinte exemplo:
+</p>
+
+<blockquote>
+    Qual a probabilidade da minha grama estar molhada dado que está chovendo?
+</blockquote>
+
+<p>
+    Tenha calma com o que está pensando gafanhoto! 
+    Você pode estar argumentando assim. Ora! Se está chovendo, é claro que minha 
+    grama está molhada!
+    Infelizmente, as coisas não são tão simples assim. 
+    Você pode estar no centro da cidade em seu trabalho e vendo a chuva acontecer.
+    Porém, lá na sua casa pode não estar chovendo!
+</p>
+
+<h2>A Equação</h2>
+
+<p>
+    A equação a seguir apresenta o trabalho de Thomas Bayes:
+</p>
+
+<div class="figura">
+    <img src="/exemplos/IA/teorema_bayes/equacao.svg" />
+</div>
+
+<p>
+    Onde <strong>A</strong> e <strong>B</strong> são eventos e a <strong>P(B)</strong> é diferente de 0.
+    O primeiro ponto aqui é entender o que significa <strong>P(A | B)</strong> e <strong>P(B | A)</strong>.    
+</p>
+
+<p>
+    <strong>P(A | B)</strong> significa a probabilidade de <strong>A</strong> dado que <strong>B</strong> é verdade.
+    <strong>P(B | A)</strong> significa a probabiliadde de <strong>B</strong> dado que <strong>A</strong> é verdade.
+</p>
+
+<p>A figura a seguir nos ajuda a entender esta equação:</p>
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bayes_theorem_assassin.svg/400px-Bayes_theorem_assassin.svg.png" 
+    class="figura lado" />
+
+<div>
+    <p>
+        Nesta figura, a probabilidade de A: <strong>P(A)</strong> é 4/12 e a 
+        probabilidade de B: <strong>P(B)</strong> é 5/12.
+    </p>
+
+    <p>
+        Já as probabilidades condicionais são <strong>P(A | B)</strong> é 3/5
+        e <strong>P(B | A)</strong> é 3/4.
+    </p>
+
+    <p>
+        Perceba as seguintes igualdades:
+    </p>
+
+    <div class="figura">
+        <img src="/exemplos/IA/teorema_bayes/igualdades.svg" />
+    </div>
+
+    <p>
+        Além disso, perceba na parte inferior da imagem que dessa igualdade surge
+        o teorema de Bayes.
+    </p>
+</div>
+
+<div class="clear"></div>
+
+<h2>Leia também</h2>
+
+<ul>
+    <li><a href="/exemplos/IA/teorema_bayes/problema_monty_hall.html">Problema de Monty Hall</a></li>
+</ul>
+
+<h2>Referências</h2>
+
+<ul>
+    <li><a href="https://royalsocietypublishing.org/doi/epdf/10.1098/rstl.1763.0053" target="_blank">Trabalho original de Bayes</a></li>
+</ul>
