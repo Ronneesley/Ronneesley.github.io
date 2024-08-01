@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carrossel</title>
+
+    <script type="text/javascript">
+        window.onload = (e) => {
+            var div = document.getElementById("imagens");
+
+            var imagens = document.querySelectorAll("#imagens img");
+
+            for (let i = 0; i < imagens.length; i++){
+                let imagem = imagens[i];
+                imagem.style.display = 'none';
+            }
+
+            var atual = 0;
+            imagens[0].style.display = 'block';
+
+            setInterval( () => {
+                imagens[atual].style.display = 'none';
+                atual++;
+                if (atual >= imagens.length){
+                    atual = 0;
+                }
+
+                imagens[atual].style.display = 'block';
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <div id="imagens">
+        <img src="https://i.pinimg.com/originals/a4/1d/c5/a41dc5e333b388880eaa74615a49ad7c.png" width="200" />
+
+        <img src="https://upload.wikimedia.org/wikipedia/sco/6/67/Minnie_Mouse.png" />
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/6/6f/Donald.png" width="200" />
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/4/4c/Pluto_%28Disney%29.jpg" width="200" />
+    </div>    
+</body>
+</html>
