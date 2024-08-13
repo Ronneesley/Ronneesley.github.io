@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="produtos.xsl"?>
+<produtos>
+    <produto nome="Arroz" valor="50.0">
+        <validade data="20/08/2024" />
+    </produto>
+    <produto nome="Feijão" valor="20.0">
+    </produto>
+    <produto nome="Rosquinha" valor="5.0" 
+        fabricante="Rancheiro">        
+    </produto>
+    <produto nome="Pão" valor="1.0"></produto>
+    <produto nome="Sabão em Pó" valor="70.0" />
+</produtos>

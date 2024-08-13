@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Arroz", 
+        "valor": "50.0",
+        "validade": {
+            "data": "20/08/2024"
+        } 
+    },
+    {
+        "nome": "Feijão",
+        "valor": "20.0"
+    },
+    { 
+        "nome": "Rosquinha",
+        "valor": "5.0", 
+        "fabricante": "Rancheiro"
+    },
+    {
+        "nome": "Pão",
+        "valor": "1.0" 
+    },    
+    { 
+        "nome": "Sabão em Pó",
+        "valor": "70.0" 
+    }
+]
