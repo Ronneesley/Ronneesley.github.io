@@ -1,0 +1,17 @@
+div.campo {
+    margin-bottom: 10px;
+}
+
+div.campo label {
+    display: block;
+}
+
+div.campo input,
+div.campo textarea {
+    border: 1px solid black;
+}
+
+div.campo input:hover,
+div.campo textarea:hover {
+    background-color: #e2e2e2;
+}
