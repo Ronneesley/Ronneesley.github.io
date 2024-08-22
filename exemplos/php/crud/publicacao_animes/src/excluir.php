@@ -11,3 +11,5 @@ $con->close();
 echo "Excluído com sucesso";
 
 ?>
+
+<a href="listagem.php">Listagem</a>
