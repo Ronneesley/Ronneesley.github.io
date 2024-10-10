@@ -1,0 +1,33 @@
+@import url('comum.css');
+
+table {
+    border-radius: 5px;
+    border: 1px solid gray;
+    border-collapse: collapse;    
+    width: calc(100vw - 10px);
+}
+
+table thead {
+    background-color: #e2e2e2;    
+}
+
+table thead tr th {
+    border-bottom: 5px solid gray;
+    text-align: left;
+    padding-left: 10px;
+}
+
+table tbody tr td {
+    background-color: white;
+    padding: 10px;
+}
+
+table tbody tr:hover td {
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+table tbody tr:hover td a {
+    color: white;
+}

@@ -2,12 +2,13 @@
 
 $id = $_POST["id"];
 $titulo = $_POST["titulo"];
+$genero = $_POST["genero"];
 $sinopse = $_POST["sinopse"];
 
 $con = new mysqli("localhost", "root", "", "publicacao");
 
 $con->query("update animes set titulo = '$titulo', 
-    sinopse = '$sinopse' where id = $id");
+    genero = $genero, sinopse = '$sinopse' where id = $id");
 
 $con->close();
 
