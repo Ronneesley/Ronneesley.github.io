@@ -1,5 +1,5 @@
 <?php
 
-header("Location: listagem.php");
+header("Location: manter_animes/listagem.php");
 
 ?>
