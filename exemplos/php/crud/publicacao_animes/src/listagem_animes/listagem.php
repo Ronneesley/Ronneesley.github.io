@@ -10,24 +10,26 @@
     <body>                
         <h1>Animes</h1>
 
-        <?php
+        <div class="animes">
+            <?php
 
-        $con = new mysqli("localhost", "root", "", "publicacao");
+            $con = new mysqli("localhost", "root", "", "publicacao");
 
-        $res = $con->query("
-            select * from animes as a
-            order by titulo");
+            $res = $con->query("
+                select * from animes as a
+                order by titulo");
 
-        while ($linha = $res->fetch_object()){
-            echo "<div>\n";                
-            echo "<img src='../imagens/capa.png' />";
-            echo "<h2>" . $linha->titulo . "</h2>\n";            
-            echo "<a href='../ver_detalhes/anime.php?id=" . $linha->id . "'>Detalhes</a>";
-            echo "</div>\n";
-        }
+            while ($linha = $res->fetch_object()){
+                echo "<div class='anime'>\n";                
+                echo "<img src='../imagens/capa.png' />";
+                echo "<h2>" . $linha->titulo . "</h2>\n";            
+                echo "<a href='../ver_detalhes/anime.php?id=" . $linha->id . "'>Detalhes</a>";
+                echo "</div>\n";
+            }
 
-        $con->close();
+            $con->close();
 
-        ?>
+            ?>
+        </div>
     </body>
 </html>
