@@ -3,11 +3,16 @@
     <head>
         <title>Cadastro Anime</title>
 
+        <link rel="stylesheet" href="../css/layout.css" />
         <link rel="stylesheet" href="../css/form.css" />
         <meta charset="UTF-8">
     </head>
 
     <body>
+        <?php
+            include("../admin/topo.php");
+        ?>
+
         <h1>Cadastro de Animes</h1>                
 
         <form action="inserir.php" method="POST">
@@ -43,5 +48,9 @@
 
             <input type="submit" value="Salvar" class="botao" />
         </form>
+
+        <?php
+            include("../admin/rodape.php");
+        ?>
     </body>
 </html>

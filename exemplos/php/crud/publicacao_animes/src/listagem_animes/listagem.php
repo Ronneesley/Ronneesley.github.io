@@ -15,16 +15,14 @@
         $con = new mysqli("localhost", "root", "", "publicacao");
 
         $res = $con->query("
-            select a.*, g.nome as nome_genero from animes as a 
-            inner join generos as g 
-            on a.genero = g.id 
+            select * from animes as a
             order by titulo");
 
         while ($linha = $res->fetch_object()){
             echo "<div>\n";                
             echo "<img src='../imagens/capa.png' />";
             echo "<h2>" . $linha->titulo . "</h2>\n";            
-            echo "<p>" . $linha->sinopse . "</p>\n";
+            echo "<a href='../ver_detalhes/anime.php?id=" . $linha->id . "'>Detalhes</a>";
             echo "</div>\n";
         }
 
